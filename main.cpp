@@ -1,8 +1,11 @@
+//Author: McDermott Liam Shimada 
+
 #include<vector>
 #include<string>
 #include<iostream>
 #include<fstream>
 #include<ostream>
+#include "numbers.h"
 
 
 
@@ -12,12 +15,40 @@ int main()
 
 {
 
+string start;
+
+
+cout<<"                 "<<endl;
+cout<<"Welcome to Countdown! The rules are simple. "<<endl; 
+cout<<"You will first be shown a number. "<<endl; 
+cout<<"Next, 6 different numbers will be shown "<<endl;
+cout<<"that will need to be solved using mathematical "<<endl;
+cout<<"means to equal the number that was first shown to you. "<<endl;
+cout<<"Depending on the level of difficulty that you select, "<<endl;
+cout<<"you will be giving a certain amount of time to solve. "<<endl;
+cout<<"If you run out of time, you lose! Now lets play! "<<endl;
+
+do
+
+{
+
+cout<<"Please enter Play to begin: "<<endl;
+cin>>start;
+
+if(start == "play" || start == "Play")
+
+{
+
+cout<<"Lets play! "<<endl;
+
+break;
+
+}
 
 
 
-
-
-
+}while(start != "play" || start != "Play");
+ 
 
 
 
