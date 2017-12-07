@@ -15,13 +15,20 @@ class numbers
 
 private:
 
-
-
+int numberSet[] = {36, 100, 60, 50, 35};
 
 
 
 public:
 
+
+{
+
+
+int getSet();
+
+
+ 
 
 
 

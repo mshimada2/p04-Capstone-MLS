@@ -1,21 +1,27 @@
 //Author: McDermott Liam Shimada 
 
-#include<vector>
+#include<array>
 #include<string>
 #include<iostream>
 #include<fstream>
 #include<ostream>
-#include "numbers.h"
-
+//#include"numbers.h"
 
 
 using namespace std;
+
+//prototypes
+
+void solveAttempts(); 
+
 
 int main()
 
 {
 
+numbers game;
 string start;
+
 
 
 cout<<"                 "<<endl;
@@ -41,15 +47,78 @@ if(start == "play" || start == "Play")
 
 cout<<"Lets play! "<<endl;
 
-break;
+
 
 }
 
 
 
-}while(start != "play" || start != "Play");
+}while(start != "play" && start != "Play");
  
 
+while(start == "play" || start == "Play")
+
+
+
+
+
+return 0;
+
+}
+
+
+
+
+
+
+void solveAttempts()
+
+
+{
+
+int attempts;
+
+
+
+while(attempts <= 3 )
+
+{
+
+if (attempts == 1)
+
+{
+
+    cout<<"Wrong! You have two more attempts left to solve. "<<endl;
+
+}
+
+else if (attempts == 2)
+
+{
+
+    cout<<"Wrong! You have one more attempt left to solve. "<<endl;
+
+}
+
+else 
+
+{
+
+
+    cout<<"Wrong! You lose! "<<endl;
+
 
 
 }
+
+}
+
+
+}
+
+
+//correctAnswer
+
+
+
+
