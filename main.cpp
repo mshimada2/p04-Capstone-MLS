@@ -2,31 +2,26 @@
 #include<array>
 #include<string>
 #include<iostream>
-#include<fstream>
-#include<ostream>
-//#include"numbers.h"
+//#include<fstream>
+//#include<ofstream>
+//#include<ifstream>
+#include"numbers.h"
+
 using namespace std;
 
-//prototypes
-//string winner(variable here);
-void checkAttempts(int); 
-void display_message(void);
 
-
-int main()
-{
+int main(){
+        numbers game;
         int attempts = 0;
-        //numbers game;
         string start;
         string answer;
         int questions[] = {45, 11, 105000};
-
+        
         //start game
         cout << "Ready to play a game? Type in Play or play to start! \n When you are done control c to quit" << endl;
         cin >> start;
 
-        while(start == "play" || "Play")
-        {
+        while(start == "play" || "Play"){
                 cout << "Lets Play" << endl;
 
 
@@ -75,7 +70,7 @@ int main()
                                         else{
 
                                                 attempts += 1;
-                                                checkAttempts(attempts);
+                                                game.checkAttempts(attempts);
 
                                         }
 
@@ -94,7 +89,7 @@ int main()
                                         else{
 
                                                 attempts += 1;
-                                                checkAttempts(attempts);
+                                                game.checkAttempts(attempts);
 
                                         }
 
@@ -111,7 +106,7 @@ int main()
                                         else{
 
                                                 attempts += 1;
-                                                checkAttempts(attempts);
+                                                game.checkAttempts(attempts);
 
                                         }
 
@@ -126,7 +121,7 @@ int main()
 
         }
 
-        void checkAttempts(int attempts)
+/*        void checkAttempts(int attempts)
 
         {
 
@@ -175,4 +170,4 @@ int main()
 
 
 
-
+*/
