@@ -2,66 +2,47 @@
 #include<array>
 #include<string>
 #include<iostream>
-//#include<fstream>
-//#include<ofstream>
-//#include<ifstream>
+#include<fstream>
 #include"numbers.h"
 
 using namespace std;
 
 
 int main(){
+        
         numbers game;
         int attempts = 0;
         string start;
         string answer;
         int questions[] = {45, 11, 105000};
+
+
+        game.displayMessage();
         
         //start game
-        cout << "Ready to play a game? Type in Play or play to start! \n When you are done control c to quit" << endl;
+        cout << "Ready to play? "<< endl;
         cin >> start;
 
-        while(start == "play" || "Play"){
+        while(start == "play" || start == "Play"){
                 cout << "Lets Play" << endl;
 
 
-                //       while(attempts > 3){
+                for(int i = 0; i < 3; i++){
 
-                //              display_message();
-
-                //do while to check to see if the user wants to play
-
-                /* do{
-
-                   cout<<"Please enter Play to begin or control c to quit: "<<endl;
-                   cin>>start;
-
-                   if(start == "play" || start == "Play"){
-
-                   cout<<"Lets play! "<<endl;
-
-                   }
-
-                   }while(start != "play" && start != "Play");
-
-                 */
-                //begin solving for the answer
-
-                for(int i = 0; i < 2; i++){
-
-                        cout<<questions[22]<<endl;
-                        cout<<"Use these numbers to mathematically solve for the upcoming numbers. "<<endl;
+                        cout<<"Use these numbers to solve for the numbers shown to you: "<<endl;
+                        cout<<"36,100,60,50,35 "<<endl;
                         cout<<questions[i]<<endl;
                         cin>>answer;
 
                         switch(i){
 
-                                case 1: 
+                                case 0: 
+                                                 cout<<answer<<endl;
+                                                 cout<<"((36*100/60)-(50-35)"<<endl;
 
                                         if(answer == "((36*100/60)-(50-35)"){
 
-                                                // winner();
-
+                                                 game.winner();
 
                                         }
 
@@ -76,12 +57,12 @@ int main(){
 
                                         break;
 
-                                case 2:
+                                case 1:
 
 
                                         if(answer == "(36-35)-(50-35)"){
 
-                                                //winner();
+                                               game. winner();
 
                                         }
 
@@ -95,11 +76,11 @@ int main(){
 
                                         break;
 
-                                case 3: 
+                                case 2: 
 
                                         if(answer == "((36*100/60)-(50-35)"){
 
-                                                //winner();
+                                                game.winner();
 
                                         }
 
@@ -114,60 +95,12 @@ int main(){
 
                         }
                 }
-
+                
+              break;
 
         }
         return 0;
 
         }
 
-/*        void checkAttempts(int attempts)
 
-        {
-
-                if(attempts == 1){
-
-                        cout<<"Wrong! You have 2 more attempts. "<<endl;
-                }
-
-
-                if(attempts == 2){
-
-                        cout<<"Wrong! You have 1 more attempts. "<<endl;
-
-                }
-
-                else if(attempts == 3){
-
-                        cout<<"Wrong! You lose. "<<endl;
-                        attempts = 0;
-                }
-
-                else{
-
-                        cout<<"Error: Restart the program. "<<endl;
-
-
-                }
-        }
-
-        void display_message()
-
-        {
-
-
-                cout<<"I display a message "<<endl;
-
-        }
-
-
-        //end program
-
-
-
-
-
-
-
-
-*/

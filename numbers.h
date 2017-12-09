@@ -3,9 +3,7 @@
 #include <iostream>
 #include <string>
 #include <array>
-//#include<fstream>
-//#include<ofstream>
-//#include<ifstream>
+#include<fstream>
 
 
 using namespace std;
@@ -19,16 +17,18 @@ class numbers
         private:
 
                 //int numberSet[] = {36, 100, 60, 50, 35};
+            int tries;
+
+            ifstream file;
 
 
         public:
-
+                
+                void displayMessage();
 
                 int checkAttempts(int);
 
-                void displayMessage(string);
-
-                void winner(string);
+                void winner();
 
 
 };
