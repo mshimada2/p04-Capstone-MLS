@@ -90,7 +90,7 @@ It simply takes in a file opens it up and displays the messaage within the whole
 
 file: numbers.h, functions in the class made in numbers.cpp and called upon in main.cpp
 lines: the whole thing pretty much in numbers.h, main.cpp (23, 63, 82, 92,99,)
-[numbers.cpp lines 29-54](/numbers.cpp#L29)
+[main.cpp lines 23-99](/main.cpp#L23)
 
 My use of class is appropriate and "masterful" for these reasons:
 
