@@ -24,11 +24,11 @@ class numbers
         public:
 
 
-                int checkAttempts();
+                int checkAttempts(int);
 
-                void displayMessage();
+                void displayMessage(string);
 
-                //void winner();
+                void winner(string);
 
 
 };
