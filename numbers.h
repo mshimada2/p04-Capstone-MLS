@@ -9,6 +9,8 @@
 using namespace std;
 
 
+//make class with variables and functions
+
 class numbers
 
 {
